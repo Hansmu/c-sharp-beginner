@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\EnumExample.cs" />
+    <Compile Include="Examples\ReferenceTypesVsValueTypesExample.cs" />
     <Compile Include="Examples\StringAndArrayExamples.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="Person.cs" />

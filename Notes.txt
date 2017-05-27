@@ -33,3 +33,28 @@ C# has verbatim strings, prefix the string with a @"string", then won't have to 
 Variables map to a type in the .NET framework (ex int is Int32).
 
 Enum is a set of key-value pairs. Use enum for a bunch of related constants. Enum is internally an integer.
+
+In C#, we have two main types from which we create new types. Classes and structures. Every type is either a class or a structure.
+All primitive types are structures. All primitive types are small types, they take no more than 8 bytes, that's why they're internally declared
+as a structure in .NET.
+Arrays and strings are both classes. We can also create custom ones. 
+Structures and classes are handled differently on run time.
+
+Structures are value types, classes are reference types.
+When you declare a value type, then a part of memory is allocated on the stack. The allocation is done automatically.
+When the variable goes out of scope, then the value is instantly removed from memory.
+With reference types you have to manually allocated memory (new).
+Memory is allocated on the heap for reference types. 
+When an object goes out of scope, then it continues existing for a little while. Garbage collected by CLR takes care of it eventually.
+Once in a while CLR looks at the objects that are not used anymore and removes them from the heap.
+
+Depending on if the variable is a reference type or value type, then var variable = variable2; has two different outcomes.
+Value type copies value to the other variable. No reference.
+Reference type copies reference the other variable. Change one and you change the other.
+
+In heap memory with objects a section of memory is allocated for the object.
+Then on the stack a variable is created to hold the reference. When you equal one object with another, then you're just equalling the
+memory address.
+
+When we pass a value type to an object, it just passes a copy.
+With a reference type the reference value is passed.

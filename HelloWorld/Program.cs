@@ -39,6 +39,7 @@ namespace HelloWorld
 			Console.WriteLine(calculator.Add(10, 10));
 
 			StringAndArrayExamples.UsageExamples();
+			ReferenceTypesVsValueTypesExample.UsageExample();
 		}
 
 		private static void TypeConversionExample()
