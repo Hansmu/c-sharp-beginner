@@ -14,3 +14,7 @@ App.config contains configuration info for the application. Can contain database
 
 For local variables use Camel Case.
 For constants use Pascal Case.
+
+C# doesn't have automatic overflow checking. Once it goes over, you reach 0. Use the checked keyword to check overflow. checked {  }. An exception will be thrown instead of overflowing.
+It's not really something that is used. You'd just use a higher capacity variable.
+
