@@ -7,3 +7,10 @@ It's called just in time compilation (JIT).
 As long as a machine has CLR, that can run your application.
 
 C# has namespaces to contain classes. Assembly is used to contain namespaces. Assembly is DLL or EXE. When you compile an application, then one or more assemblies are built.
+
+Under properties we have AssemblyInfo.cs. It shows what assembly will be produced as a result of compiling this application. An executable is an assembly.
+Under References you see any assembly this project is referecing to do its job.
+App.config contains configuration info for the application. Can contain database connection strings for example or just regular settings.
+
+For local variables use Camel Case.
+For constants use Pascal Case.
