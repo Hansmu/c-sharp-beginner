@@ -31,3 +31,5 @@ If you're going to create thousands of these classes, then use structs, otherwis
 Strings are immutable, cannot be changed after creation. Every string that changes a string returns a new one instead of changing it.
 C# has verbatim strings, prefix the string with a @"string", then won't have to double backslash.
 Variables map to a type in the .NET framework (ex int is Int32).
+
+Enum is a set of key-value pairs. Use enum for a bunch of related constants. Enum is internally an integer.
