@@ -24,3 +24,6 @@ For string to number can use Convert or the specific variable.
 Convert.ToInt32(s); int.Parse(s);
 
 With a static method, the method won't be repeated multiple times in memory - on all objects created. Instead it'll be in one place.
+
+Use a struct when you want to define a small lightweight object. Like a point that has an X and Y, can use a class as well. 
+If you're going to create thousands of these classes, then use structs, otherwise just stick to classes.
