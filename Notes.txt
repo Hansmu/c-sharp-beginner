@@ -27,3 +27,7 @@ With a static method, the method won't be repeated multiple times in memory - on
 
 Use a struct when you want to define a small lightweight object. Like a point that has an X and Y, can use a class as well. 
 If you're going to create thousands of these classes, then use structs, otherwise just stick to classes.
+
+Strings are immutable, cannot be changed after creation. Every string that changes a string returns a new one instead of changing it.
+C# has verbatim strings, prefix the string with a @"string", then won't have to double backslash.
+Variables map to a type in the .NET framework (ex int is Int32).
