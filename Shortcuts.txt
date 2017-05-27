@@ -1,2 +1,6 @@
 Alt + Enter on imports to clean up.
 Ctrl + F5 to run application.
+Ctrl + Shift + B compiles the application.
+
+cw + tab tab inserts a write line.
+Ctrl + X deletes line.
