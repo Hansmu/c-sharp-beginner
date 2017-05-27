@@ -1,0 +1,9 @@
+C# vs .NET
+C# is a programming language. .NET is a framework for building applications on Windows.
+In Java the language isn't instantly translated into machine code, but it's translated into byte code. The same thing in C#.
+C# code is compiled into IL code (intermediate language). It's independent of the computer it's running.
+Then we need something to translate it into the Native Code. This is what CLR is for (common language runtime). It's an application that's sitting in the memory, it translates the IL to machine code. 
+It's called just in time compilation (JIT).
+As long as a machine has CLR, that can run your application.
+
+C# has namespaces to contain classes. Assembly is used to contain namespaces. Assembly is DLL or EXE. When you compile an application, then one or more assemblies are built.

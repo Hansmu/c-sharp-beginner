@@ -1,0 +1,2 @@
+Alt + Enter on imports to clean up.
+Ctrl + F5 to run application.
