@@ -26,6 +26,9 @@ namespace HelloWorld
 
 			Console.WriteLine("\nTYPE CONVERSION EXAMPLE");
 			TypeConversionExample();
+
+			Console.WriteLine("\nOPERATORS EXAMPLE");
+			OperatorsExample();
 		}
 
 		private static void TypeConversionExample()
@@ -54,6 +57,17 @@ namespace HelloWorld
 			{
 				Console.WriteLine("Conversion went wrong.");
 			}
+		}
+
+		private static void OperatorsExample()
+		{
+			// Same as Java.
+			int numberOne = 1;
+			int numberTwo = 2;
+			string result = numberOne < numberTwo ? "Number two is greater" : "Number one is greater or equal.";
+
+			Console.WriteLine((float)numberOne / numberTwo);
+			Console.WriteLine(numberOne == numberTwo);
 		}
 	}
 }
