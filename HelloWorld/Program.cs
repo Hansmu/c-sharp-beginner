@@ -23,6 +23,37 @@ namespace HelloWorld
 			Console.WriteLine("Hello world");
 			Console.WriteLine(count);
 			Console.WriteLine("{0} {1}", 10, 11);
+
+			Console.WriteLine("\nTYPE CONVERSION EXAMPLE");
+			TypeConversionExample();
+		}
+
+		private static void TypeConversionExample()
+		{
+			byte b = 1;
+			int i = b;
+
+			Console.WriteLine(i);
+
+			byte reverse = (byte)i;
+		
+			Console.WriteLine(reverse);
+
+			var number = "1234";
+			int convertString = Convert.ToInt32(number);
+			convertString = int.Parse(number);
+
+			Console.WriteLine(number);
+
+			try
+			{
+				byte bait = Convert.ToByte(number);
+				Console.WriteLine(bait);
+			}
+			catch (Exception)
+			{
+				Console.WriteLine("Conversion went wrong.");
+			}
 		}
 	}
 }

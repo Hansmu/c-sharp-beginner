@@ -18,3 +18,7 @@ For constants use Pascal Case.
 C# doesn't have automatic overflow checking. Once it goes over, you reach 0. Use the checked keyword to check overflow. checked {  }. An exception will be thrown instead of overflowing.
 It's not really something that is used. You'd just use a higher capacity variable.
 
+Implicit type conversion can happen just by using = if the one on the right is a smaller size variable.
+Otherwise have to use explicit type conversion - use casting int i = (int) f;
+For string to number can use Convert or the specific variable.
+Convert.ToInt32(s); int.Parse(s);
