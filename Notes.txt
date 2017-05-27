@@ -22,3 +22,5 @@ Implicit type conversion can happen just by using = if the one on the right is a
 Otherwise have to use explicit type conversion - use casting int i = (int) f;
 For string to number can use Convert or the specific variable.
 Convert.ToInt32(s); int.Parse(s);
+
+With a static method, the method won't be repeated multiple times in memory - on all objects created. Instead it'll be in one place.

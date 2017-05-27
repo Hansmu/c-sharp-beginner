@@ -1,4 +1,5 @@
 ﻿using System;
+using HelloWorld.Math;
 // Have access to all the classes that are within one namespace. In order to use one from another namespace, then you need to use "using" to import.
 
 namespace HelloWorld
@@ -29,6 +30,12 @@ namespace HelloWorld
 
 			Console.WriteLine("\nOPERATORS EXAMPLE");
 			OperatorsExample();
+
+			var person = new Person("John", "Smith");
+			person.Introduce();
+
+			Calculator calculator = new Calculator();
+			Console.WriteLine(calculator.Add(10, 10));
 		}
 
 		private static void TypeConversionExample()
